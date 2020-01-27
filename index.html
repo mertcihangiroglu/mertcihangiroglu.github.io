@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mert Cihangiroglu</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav-about"><a href="#about">About</a></li>
+            <li id="nav-portfolio"><a href="#portfolio">Projects </a></li>
+            <li id="nav-contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container-fluid">
+      
+      <div class="row cover top">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 headline">
+              <h1 class="text-center">Hi, I'm Mert</h1>
+              <p class="lead text-center">Senior Computer Engineer Student. </p>
+              <p class="lead text-center">Currently working on my senior project "Emotion Recognition Using CNN" when it is completed i will add it to the website. </p>
+               <p class="lead text-center">Also I have started writing Articles on Platform Called Medium You can Directly go to my Medium profile by clicking the link below </p>
+               <a class="lead text-center" href="https://medium.com/@mertcihangiroglu"><li><i class="fa fa-linkedin-square"></i> Medium Profile</li></a>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 center-block text-center">
+              <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div id="about" class="row cover">
+        <h2 class="text-center">About Me</h2>
+        <div class="row">
+          <div class="col-md-6 text-center about-info">
+            <img class="img-circle text-center profile-img" src="/images/profileimage.png">
+            <p class="text-center">I am interested in Deep Learning.I am Currently taking a Deep Learning for Computer Vision course Taught by Justin Johhnson at University of Michigan.Also to gain Practical experience i am following the fasti Course taught by Jeremy Howard.Fast ai is a library on Pytorch. </p>
+          </div>
+          <div class="col-md-6 about-tools">
+            <p class="text-center">Here's a few of the tools and Frameworks I use</p>
+              <div class="col-xs-6">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Php</li>
+                  <li>Deep Learning</li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul>
+                  <li>Python</li>
+                  <li>Pytorch</li>
+                  <li>Mysql</li>
+                </ul>
+              </div>
+            
+          </div>
+          <div class="row break">
+            <div class="col-md-6 about-last">
+              <p class="text-center">Check out my latest projects <span class="glyphicon glyphicon-arrow-down"></span></p>
+            </div>
+          </div>
+        </div> 
+      </div><!-- End #About -->
+
+      <div id="portfolio" class="row cover">
+        <h2 class="text-center">Projects</h2>
+        <div class="container">
+          <div class="row portfolio-projects"> <!-- Two project row-->
+            <div class="col-lg-6"> <!--1st side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center">
+                  <h4 class="portfolio-projects--title">Cpu-Scheduling</h4>
+                  <p class="portfolio-projects--desc">Compares Three Cpu-Scheduling Algorithms</p>
+                  <p class="portfolio-projects--desc">Used: Java</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/mertcihangiroglu/Cpu-Scheduling" role="button">View Project on Github</a>
+                </div>
+                <div class="col-sm-7 text-center">
+                  <img class="img-rounded portfolio-projects--image" src="images/cpu.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"> <!--2nd side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <h4 class="portfolio-projects--title">Web Weather Project </h4>
+                  <p class="portfolio-projects--desc">I have used the knowladge i gained from my Internshipp at the Denmark based company DFDS.I have created a database and users can search cities.I could have used API's to get real results but this way i developed my skills about MySql.</p>
+                  <p class="portfolio-projects--desc">Used: MySql,PHP</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/mertcihangiroglu/WebWeatherProject" role="button">View Project on Github</a>
+                </div>
+                <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <img class="img-rounded portfolio-projects--image" src="images/Thunderstorm.png">
+                </div>
+              </div>
+            </div>
+          </div><!--end Two project row-->
+
+          <div class="col-lg-6"> <!--1st side project -->
+            <div class="row"> 
+              <div class="col-sm-5 text-center">
+                <h4 class="portfolio-projects--title">CartPole Game</h4>
+                <p class="portfolio-projects--desc">Artificial Intelligence Class Term Project.</p>
+                <p class="portfolio-projects--desc">Used:Python,Reinforcement Learning Techniques</p>
+                <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/mertcihangiroglu/CartPoleGame" role="button">View Project on Github</a>
+              </div>
+              <div class="col-sm-7 text-center">
+                <img class="img-rounded portfolio-projects--image" src="images/Cartpole.png">
+              </div>
+            </div>
+          </div>
+          
+            <div class="col-lg-6"> <!--2nd side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <h4 class="portfolio-projects--title">UAV Detection </h4>
+                  <p class="portfolio-projects--desc">Sytsem can detects UAVs with the usage of CNN </p>
+                  <p class="portfolio-projects--desc"> Used: Python, Yolo</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/mertcihangiroglu/UAV_DETECTION" role="button">View Project on Github</a>
+                </div>
+                <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <img class="img-rounded portfolio-projects--image" src="images/UAV.PNG">
+                </div>
+              </div>
+            </div>
+          </div><!--end 
+            
+          </div><!--end Opposite Two project row-->
+        
+
+        </div>
+        </div>
+      </div><!-- End #Portfolio -->
+
+      <div id="contact" class="row cover bottom">
+        <h2 class="text-center contact-header">Contact Me</h2>
+        <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span> mert.cihangiroglu@std.antalya.edu.tr</p>
+        <div class="text-center contact-social-icons">
+          <p>Or find me on:</p>
+          <ul class="centered">      
+            <a href="https://www.linkedin.com/in/mert-cihangiroglu/"><li><i class="fa fa-linkedin-square"></i> LinkedIn</li></a>
+            <a href="https://github.com/mertcihangiroglu"><li><i class="fa fa-github"></i> Github</li></a>  
+            <a href="https://medium.com/@mertcihangiroglu"><li><i class="fa fa-linkedin-square"></i> Medium</li></a>          
+          </ul> 
+        </p>
+        
+      </div><!-- End #Contact -->
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
+
+  </body>
+</html>
